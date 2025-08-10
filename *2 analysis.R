@@ -34,8 +34,12 @@ for(pkg in packages_needed) {
 cat("\n")
 
 # 데이터 로드
+
+data_dir <- "/Users/youjinlee/Library/Mobile Documents/com~apple~CloudDocs/My R/Fever c claude"
+
 cat("📁 데이터 로드 중...\n")
-data <- readRDS("processed_fwls_data.rds")
+data <- readRDS(file.path(data_dir, "processed_fwls_data.rds"))
+
 cat(sprintf("  ✅ 데이터 로드 완료: %d명 환자\n\n", nrow(data)))
 
 # ==============================================================================
@@ -43,7 +47,7 @@ cat(sprintf("  ✅ 데이터 로드 완료: %d명 환자\n\n", nrow(data)))
 # ==============================================================================
 
 cat("📊 STEP 1: 검정력 분석 (Power Analysis)\n")
-cat(strrep("-", 50), "\n\n")
+
 
 # CT 시행 환자만 선택
 ct_data <- data %>% 
