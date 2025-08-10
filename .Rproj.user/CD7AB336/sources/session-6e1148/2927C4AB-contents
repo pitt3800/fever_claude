@@ -9,7 +9,7 @@ library(lubridate)
 library(tableone)
 
 # 데이터 경로 설정 (Mac 환경 반영)
-data_dir <- "/Users/youjinlee/Library/Mobile Documents/com~apple~CloudDocs/My R/Fever c claude "
+data_dir <- "/Users/youjinlee/Library/Mobile Documents/com~apple~CloudDocs/My R/Fever c claude"
 
 
 ################################################################################
