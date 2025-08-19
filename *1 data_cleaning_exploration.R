@@ -6,7 +6,7 @@
 # ==============================================================================
 # 🔧 패키지 로드
 # ==============================================================================
-#.git 연습
+
 
 packages_needed <- c("tidyverse", "readxl", "tableone", "naniar", 
                      "VIM", "corrplot", "gtsummary", "lubridate")
@@ -28,10 +28,10 @@ data_dir <- "/Users/youjinlee/Library/Mobile Documents/com~apple~CloudDocs/My R/
 
 # 실제 엑셀 파일들 읽기
 
-base_data  <- read_excel(file.path(data_dir, "base_result_s.xlsx"))
-nurse_data <- read_excel(file.path(data_dir, "nurse_s.xlsx"))
-lab_data   <- read_excel(file.path(data_dir, "fever_lab_s.xlsx"))
-ct_data    <- read_excel(file.path(data_dir, "ct_s.xlsx"))
+base_data  <- read_excel(file.path(data_dir, "base_result.xlsx"))
+nurse_data <- read_excel(file.path(data_dir, "nurse.xlsx"))
+lab_data   <- read_excel(file.path(data_dir, "fever_lab.xlsx"))
+ct_data    <- read_excel(file.path(data_dir, "ct.xlsx"))
 
 
 
