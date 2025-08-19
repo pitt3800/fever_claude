@@ -6,6 +6,7 @@
 # ==============================================================================
 # 🔧 패키지 로드
 # ==============================================================================
+#.git 연습
 
 packages_needed <- c("tidyverse", "readxl", "tableone", "naniar", 
                      "VIM", "corrplot", "gtsummary", "lubridate")
@@ -22,7 +23,7 @@ cat("🏥 85세 이상 FWLS 환자 CT 진단 유용성 연구 시작\n\n")
 # ==============================================================================
 # 📁 데이터 로드
 # ==============================================================================
-data_dir <- "/Users/youjinlee/Library/Mobile Documents/com~apple~CloudDocs/My R/Fever c claude"
+data_dir <- "/Users/youjinlee/Library/Mobile Documents/com~apple~CloudDocs/My R/Fever c claude/raw fever data"
 
 
 # 실제 엑셀 파일들 읽기
