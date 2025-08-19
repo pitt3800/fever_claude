@@ -13,7 +13,9 @@ library(DynNom)
 library(rmda)
 
 # 데이터 로드
-data <- readRDS("processed_fwls_data.rds")
+
+
+data <- readRDS(file.path(data_dir,"processed_fwls_data.rds"))
 
 ################################################################################
 # 1. 단변량 분석
